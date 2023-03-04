@@ -1,6 +1,6 @@
-import { UserRole } from '@microservices/interfaces';
 import { Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
+import { UserRole } from '@microservices/interfaces';
 
 import { UserEntity } from '../user/entities';
 import { UserRepository } from '../user/repositories';
