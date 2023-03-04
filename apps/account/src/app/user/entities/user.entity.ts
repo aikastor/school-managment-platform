@@ -4,16 +4,17 @@ import { IUSer, UserRole } from '@microservices/interfaces';
 
 export class UserEntity implements IUSer {
   _id?: string;
-  displayname?: string;
+  displayName?: string;
   email: string;
   passwordHash: string;
   role: UserRole;
 
   constructor(user: IUSer) {
     this._id = user._id;
-    this.displayname = user.displayname;
+    this.displayName = user.displayName;
     this.email = user.email;
     this.role = user.role;
+    this.passwordHash = user.passwordHash;
   }
 
   public async setPassword(password: string) {
