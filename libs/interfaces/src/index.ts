@@ -1,1 +1,1 @@
-export { type IUSer } from './lib/user.interface';
+export { type IUSer, UserRole } from './lib/user.interface';
