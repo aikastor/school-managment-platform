@@ -8,7 +8,7 @@ import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ isGlobal: true, envFilePath: 'envs/.account/env' }),
+    ConfigModule.forRoot({ isGlobal: true, envFilePath: 'envs/.account.env' }),
     MongooseModule.forRootAsync(getMongoCongfig()),
     UserModule,
     AuthModule,
